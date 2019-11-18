@@ -15,7 +15,7 @@ const Show = (props) => {
   useEffect(() => {
     const fetchPosts = async () => {
       setLoading(true);
-      const url = `http://api.tvmaze.com/shows/${id}?embed=cast`;
+      const url = `https://api.tvmaze.com/shows/${id}?embed=cast`;
       const res = await axios.get(url);
       setShow(res.data);
       setLoading(false); 

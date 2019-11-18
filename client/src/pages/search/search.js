@@ -22,7 +22,7 @@ const Search = ({ history, match }) => {
 
     const fetchPosts = async () => {
       setLoading(true);
-      const url = `http://api.tvmaze.com/search/shows?q=${query}`;
+      const url = `https://api.tvmaze.com/search/shows?q=${query}`;
       const res = await axios.get(url);
       setShows(res.data);
       setLoading(false);

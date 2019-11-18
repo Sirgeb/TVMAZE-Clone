@@ -26,7 +26,7 @@ const Homepage = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       setLoading(true);
-      const url = `http://api.tvmaze.com/shows`;
+      const url = `https://api.tvmaze.com/shows`;
       const res = await axios.get(url);
       setShows(res.data);
       setTotalPages(getPageCount(res.data.length, postsPerPage));
