@@ -18,7 +18,8 @@ const Movie = ({ name, image, summary, genres, status, runtime, type, schedule }
           dangerouslySetInnerHTML={{ __html: summary }}
         />
       </div>
-      <div className="show-info">
+
+      <div className="show-info wrapper">
         <h2>Show Info</h2>
         <ul>  
             <li><strong>Runtime:</strong> {runtime} mins</li>

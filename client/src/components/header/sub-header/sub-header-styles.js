@@ -17,6 +17,17 @@ const SubHeaderStyles = styled.div`
     letter-spacing: 5px;
   }
 
+  @media (max-width: 800px) {
+    .header-info {
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: 22px;
+    }
+  }
+
+
   p:last-child {
     font-size: 16px;
   }

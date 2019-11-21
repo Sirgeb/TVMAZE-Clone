@@ -5,7 +5,6 @@ const MovieCardStyles = styled.div`
   flex-direction: column;
   width: 200px;
   background: #ffffff;
-  margin-bottom: 20px;
   padding: 10px;
   height: 350px;
 
@@ -64,6 +63,33 @@ const MovieCardStyles = styled.div`
   .year {
     background: grey;
     color: ${props => props => props.theme.colors.white};
+  }
+
+  
+  @media (max-width: 700px) {
+    width:150px;
+    height: 250px;
+    img { 
+      height: 120px;
+    }
+    .description {
+      font-size: 12px;
+    }
+    .content {
+      padding: 10px;
+    }
+    .info {
+      margin-top: 10px;
+    }
+
+    .info div {
+      width: 60px;
+      font-size: 14px;
+    }
+
+    .star {
+      margin-right: 10px;
+    }
   }
 `;
 

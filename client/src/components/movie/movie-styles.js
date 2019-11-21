@@ -15,11 +15,23 @@ const MovieStyles = styled.div`
     margin-bottom: 20px;
   }
 
+  @media (max-width: 1000px) {
+    .movie-title {
+      text-align: center;
+    }
+    .wrapper {
+      flex-direction: column;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+  }
+
   .movie-poster {
     display: flex;
     flex: 2;
     height: 300px;
   }
+
 
   .movie-poster img {
     width: 100%;
@@ -39,6 +51,13 @@ const MovieStyles = styled.div`
     padding: 10px 10px;
     text-align: justify;
   }
+
+  @media (max-width: 1000px) { 
+    .movie-description {
+      padding: 0;
+    }
+  }
 `;
+
 
 export default MovieStyles;

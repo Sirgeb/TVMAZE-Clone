@@ -15,6 +15,9 @@ const SearchStyles = styled.div`
   }
 
   button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 3px 7px;
   }
 
@@ -30,6 +33,23 @@ const SearchStyles = styled.div`
     height: 40px;
     outline:none;
     text-indent: 10px;
+  }
+
+  @media (max-width: 700px) {
+    form {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    input {
+      margin-bottom: 10px;
+      max-width: 300px;
+    }
+
+    button {
+      margin-bottom: 15px;
+      width: 20%;
+    }
   }
 `;
 

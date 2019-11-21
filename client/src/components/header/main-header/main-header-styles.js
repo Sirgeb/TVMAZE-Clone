@@ -11,6 +11,13 @@ const MainHeaderStyles = styled.div`
   .logo {
     font-size: 50px;
     flex:1;
+    margin-left: 20px;
+  }
+
+  @media (max-width: 700px) {
+    .logo {
+      margin-left: 0;
+    }
   }
 
   a {
@@ -33,6 +40,19 @@ const MainHeaderStyles = styled.div`
   .nav ul li {
     list-style: none;
     font-weight: 500;
+  }
+
+  @media (max-width: 1000px) {
+    .head {
+      flex-direction: column;
+      margin-bottom: 80px;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .nav ul li {
+      margin-right: 20px;
+      white-space: nowrap;
+    }
   }
 
   .nav ul li:hover {

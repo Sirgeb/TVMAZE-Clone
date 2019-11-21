@@ -6,6 +6,10 @@ export const Center = styled.div`
   margin-left: auto;
   margin-right: auto;
   width: 1000px;
+
+  @media (max-width: 1000px) {
+    width: auto;
+  }
 `;
 
 export const Wrapper  = styled.div`

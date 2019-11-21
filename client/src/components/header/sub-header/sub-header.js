@@ -8,7 +8,7 @@ const SubHeader = () => {
     <SubHeaderStyles>
       <div className="container">
         <div className="header-info">
-            <p>Hi! Take a look at our <strong>latest show</strong>!</p>
+            <p>Hi! Take a look at our <strong>latest shows</strong>!</p>
             <p>Don't forget to Sign up{":-)"}</p>
         </div>
       </div>

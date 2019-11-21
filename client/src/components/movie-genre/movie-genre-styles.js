@@ -1,23 +1,26 @@
 import styled from 'styled-components';
 
 const MovieGenreStyles = styled.div`
+  margin: 0 auto;
   .movie-genre {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
-  .movie-genre ul {
+  ul {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 60%;
     margin: 0;
     padding: 0;
   }
 
-  .movie-genre ul li {
+   ul li {
     list-style: none;
     font-weight: 600;
+    font-size: 14px;
+    color: ${props => props.theme.colors.black};
+    margin-right: 50px;
     font-size: 14px;
   }
 
@@ -29,6 +32,17 @@ const MovieGenreStyles = styled.div`
     cursor: pointer;
     color: ${props => props.theme.colors.blue};
     text-decoration: none;
+  }
+
+  @media (max-width: 700px) {
+    ul li {
+      margin-right: 10px;
+      font-size: 12px;
+    }
+
+    ul li:nth-child(5), ul li:nth-child(6) {
+      display: none;
+    }
   }
 `;
 

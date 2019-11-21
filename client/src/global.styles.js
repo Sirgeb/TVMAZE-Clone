@@ -16,9 +16,9 @@ export const GlobalStyle = createGlobalStyle`
     width: 1000px;
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 1000px) {
     .container {
-
+      width: auto;
     }
   }
 `;

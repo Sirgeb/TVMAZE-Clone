@@ -20,6 +20,10 @@ const PaginationStyles = styled.div`
     margin-right: 20px;
   }
 
+  span:hover {
+    background-color: ${props => props.theme.colors.blue};
+    color: ${props => props.theme.colors.white};
+  }
 `;
 
 export default PaginationStyles;
