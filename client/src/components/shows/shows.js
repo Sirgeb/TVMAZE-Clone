@@ -1,9 +1,13 @@
 import React from 'react';
 
-import ShowsStyle from './shows-styles';
+import ShowsStyle, { Center } from './shows-styles';
 import ShowCard from '../show-card/show-card';
 
 const Shows = ({ shows, onSearch }) => {
+
+  if (!shows.length) {
+    return <Center>No Result... Make a search.</Center>;
+  }
 
   return (
     <ShowsStyle>

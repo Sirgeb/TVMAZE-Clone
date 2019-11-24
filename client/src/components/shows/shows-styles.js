@@ -18,4 +18,9 @@ const ShowsStyle = styled.div`
   }
 `;
 
-export default ShowsStyle;
+const Center = styled.div`
+  margin: 0 auto;
+`;
+
+
+export {Center, ShowsStyle as default};
